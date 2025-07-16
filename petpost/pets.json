@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Bella",
+    "breed": "Labrador",
+    "age": "3",
+    "image_url": "https://your-bucket.s3.amazonaws.com/bella.jpg"
+  }
+]

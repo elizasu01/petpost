@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upload a Pet</title></head>
+<body>
+  <h1>Add a New Pet</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Breed: <input type="text" name="breed" required></label><br>
+    <label>Age: <input type="number" name="age" required></label><br>
+    <label>Photo: <input type="file" name="image" accept="image/*" required></label><br>
+    <button type="submit">Upload</button>
+  </form>
+  <a href="/">View All Pets</a>
+</body>
+</html>

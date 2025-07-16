@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Adoptable Pets</title></head>
+<body>
+  <h1>Adoptable Pets</h1>
+  {% for pet in pets %}
+    <div>
+      <h2>{{ pet.name }}</h2>
+      <p>Breed: {{ pet.breed }}</p>
+      <p>Age: {{ pet.age }}</p>
+      <img src="{{ pet.image_url }}" width="200" />
+    </div>
+  {% endfor %}
+  <a href="/upload">Add a Pet</a>
+</body>
+</html>
