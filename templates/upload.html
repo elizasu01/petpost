@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload a Pet</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container form-container">
+    <h1>🐶 Add a New Pet 🐱</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label>Name:<input type="text" name="name" required></label>
+      <label>Breed:<input type="text" name="breed" required></label>
+      <label>Age:<input type="number" name="age" required></label>
+      <label>Photo:<input type="file" name="image" accept="image/*" required></label>
+      <button type="submit">📤 Upload Pet</button>
+    </form>
+    <div class="button-area">
+      <a class="button" href="/">⬅ Back to Pet List</a>
+    </div>
+  </div>
+</body>
+</html>
